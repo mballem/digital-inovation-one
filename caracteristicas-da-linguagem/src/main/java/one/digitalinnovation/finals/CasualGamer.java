@@ -14,7 +14,7 @@ public class CasualGamer extends Gamer {
     }*/
 
     public String play(final String game) {
-        // não é possível alterar o valor de uma variavel o parametro marcodos como final
+        // não é possível alterar o valor de uma variavel o parametro marcados como final
         //game = "Wow";
 
         return "Jogando " + game;
