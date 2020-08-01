@@ -1,4 +1,4 @@
-package one.digitalinnovation.classes.tipos.wrappers;
+package one.digitalinnovation.tipos.wrappers;
 
 public class Wrappers {
 
