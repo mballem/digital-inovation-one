@@ -46,7 +46,7 @@ public class ExemploStream {
                 .peek(System.out::println)
                 .collect(Collectors.toList()));
 
-        // Retorna somente os 3 primeiros elementos da coleção
+        // Retorna a coleção
         System.out.println("Retorna os nomes da coleção: ");
         estudantes.stream().forEach(System.out::println);
 
