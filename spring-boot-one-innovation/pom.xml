@@ -14,6 +14,8 @@
 	<name>spring-boot-one-innovation</name>
 	<description>Demo project for Spring Boot</description>
 
+	<packaging>jar</packaging>
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
