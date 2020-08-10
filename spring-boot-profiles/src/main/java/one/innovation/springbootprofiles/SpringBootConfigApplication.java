@@ -1,4 +1,4 @@
-package one.innovation.springbootconfig;
+package one.innovation.springbootprofiles;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
