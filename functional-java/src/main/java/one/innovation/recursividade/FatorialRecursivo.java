@@ -1,4 +1,4 @@
-package one.innovation.functional.recursividade;
+package one.innovation.recursividade;
 
 public class FatorialRecursivo {
     public static void main(String[] args) {
