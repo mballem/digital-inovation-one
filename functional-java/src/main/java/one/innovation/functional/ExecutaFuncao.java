@@ -14,6 +14,14 @@ public class ExecutaFuncao {
         // lambda com interface funcional java 8+
         Funcao colocarPrefixoSenhorNoNome = valor -> "Sr. " + valor;
         System.out.println(colocarPrefixoSenhorNoNome.gerar("Marco Silva"));
+
+        // lambda quando necessário ter mais de uma operação
+        Funcao concaternarSobreNomeAoNomeESr = valor -> {
+            valor = "Sr. " + valor;
+            valor = valor + " Camargo";
+            return valor;
+        };
+        System.out.println(concaternarSobreNomeAoNomeESr.gerar("Juliano"));
     }
 
 
