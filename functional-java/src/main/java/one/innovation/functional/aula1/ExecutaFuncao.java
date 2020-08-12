@@ -1,4 +1,4 @@
-package one.innovation.functional;
+package one.innovation.functional.aula1;
 
 public class ExecutaFuncao {
     public static void main(String[] args) {
