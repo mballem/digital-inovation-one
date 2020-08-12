@@ -1,5 +1,10 @@
 package one.innovation.functional.aula2;
 
+/*
+    Funcao alta ordem:
+    - por parametro recebe outra função
+    - ou uma função retorna outra função
+ */
 public class FuncaoAltaOrdem {
     public static void main(String[] args) {
         Calculo soma = (a, b) -> a + b;
