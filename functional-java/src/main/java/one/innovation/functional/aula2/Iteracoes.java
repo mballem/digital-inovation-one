@@ -1,13 +1,22 @@
 package one.innovation.functional.aula2;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Iteracoes {
     public static void main(String[] args) {
         String[] nomes = {"João", "Paulo", "Oliveira", "Santos", "Instrutor", "Java", "João"};
-        Integer[] numeros = {1, 2, 3, 4, 5};
         imprimirNomesFiltrados(nomes);
+
+        Integer[] numeros = {1, 2, 3, 4, 5};
+        imprimirODobroDeCadaValor(numeros);
+
+        List<Integer> inteiros = Arrays.asList(1, 2, 3, 4, 5);
+        inteiros.stream()
+                .map(i -> i * 3)
+                .forEach(System.out::println);
     }
 
     public static void imprimirNomesFiltrados(String... nomes) {
@@ -27,5 +36,11 @@ public class Iteracoes {
 
         System.out.println(nomesStream);
 
+    }
+
+    public static void imprimirODobroDeCadaValor(Integer... numeros) {
+        Stream.of(numeros)
+                .map(n -> n * 2)
+                .forEach(System.out::println);
     }
 }
