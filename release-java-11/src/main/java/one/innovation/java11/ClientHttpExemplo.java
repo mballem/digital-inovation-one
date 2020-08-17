@@ -1,6 +1,5 @@
 package one.innovation.java11;
 
-import javax.swing.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -28,5 +27,4 @@ public class ClientHttpExemplo {
 
         System.out.println(response.body());
     }
-
 }
