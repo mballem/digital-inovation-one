@@ -2,7 +2,6 @@ package one.innovation.demorestfull;
 
 import one.innovation.demorestfull.dto.Soldado;
 import org.json.JSONException;
-import org.json.JSONObject;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
