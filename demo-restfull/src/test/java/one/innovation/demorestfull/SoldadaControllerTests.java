@@ -72,4 +72,13 @@ public class SoldadaControllerTests {
                 .content(entityToJson(new Soldado("10508090", "Kitheris", "Elfo", "Adagas")))
         ).andExpect(MockMvcResultMatchers.status().isCreated());
     }
+
+    @Test
+    public void deveExcluirComStatus200() throws Exception {
+        mock.perform(MockMvcRequestBuilders
+                .delete("/v1/soldado/10509080")
+                        .header("authorization", "JAVA")
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isOk());
+    }
 }
