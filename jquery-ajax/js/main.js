@@ -5,12 +5,15 @@ function consultaCep() {
         type: 'GET',
         success: function(response){
             console.log(response);
-            $("#cep").html(response.cep); // com jquery
-            document.getElementById("logradouro").innerHTML = response.logradouro;
-            document.getElementById("complemento").innerHTML = response.complemento;
-            document.getElementById("bairro").innerHTML = response.bairro;
-            document.getElementById("localidade").innerHTML = response.localidade;
-            $("#uf").html(response.uf); // com jquery
+            //$("#logradouro").html(response.logradouro); // com jquery
+            //document.getElementById("logradouro").innerHTML = response.logradouro; // com js puro
+            
+            $("#logradouro").html(response.logradouro);
+            $("#bairro").html(response.bairro);
+            $("#localidade").html(response.localidade);
+            $("#uf").html(response.uf);
+            $("#numero_cep").html('CEP: ' + response.cep);
+
         }  
     })
 }
