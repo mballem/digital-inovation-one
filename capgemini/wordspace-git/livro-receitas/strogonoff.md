@@ -10,5 +10,7 @@
 * 1 tomate maduro
 * batata palha
 
+### Modo de Preparo
 
+* Invente sua própria maneira de prepara este prato
 
