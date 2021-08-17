@@ -5,4 +5,4 @@
 *   Estudo Git
 *   Estudo Github
 
-#### Foco na missão
+#### Foco na missão!
