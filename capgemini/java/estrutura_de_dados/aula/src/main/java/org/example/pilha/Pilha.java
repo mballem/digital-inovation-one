@@ -30,4 +30,22 @@ public class Pilha {
     public boolean isEmpty() {
         return referencia == null;
     }
+
+    @Override
+    public String toString() {
+        String retorno = "--\t--\t--\t--\t--\t--\n";
+        retorno += "\t\tPilha\n";
+        retorno += "--\t--\t--\t--\t--\t--\n";
+
+        Elemento temp = this.referencia;
+        while (true) {
+            if (temp != null) {
+                retorno += "[Elemento{valor=" + temp.getValor() + "}]\n";
+                temp = temp.getReferencia();
+            } else {
+                break;
+            }
+        }
+        return retorno;
+    }
 }
