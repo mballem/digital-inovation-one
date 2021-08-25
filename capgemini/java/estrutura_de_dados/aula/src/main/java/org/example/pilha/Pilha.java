@@ -8,6 +8,24 @@ public class Pilha {
         this.referencia = null;
     }
 
+    public Elemento first() {
+        Elemento temp = this.referencia;
+        while (true) {
+            if (temp != null) {
+                if (temp.getReferencia() != null) {
+                    temp = temp.getReferencia();
+                } else {
+                    break;
+                }
+            }
+        }
+        return temp;
+    }
+
+    public Elemento last() {
+        return this.referencia;
+    }
+
     public Elemento pop() {
         if (!isEmpty()) {
             Elemento poped = this.referencia;
