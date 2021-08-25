@@ -15,10 +15,10 @@ public class Main {
         System.out.println(pilha);
 
         // remove o último elemento da pilha
-        System.out.println("ùltimo elemento: " + pilha.last());
+        System.out.println("último elemento: " + pilha.top());
         pilha.pop();
         System.out.println(pilha);
-        System.out.println("ùltimo elemento: " + pilha.last());
+        System.out.println("último elemento: " + pilha.top());
 
         // adiciona novo elemento a pilha
         pilha.push(new Elemento(7));
