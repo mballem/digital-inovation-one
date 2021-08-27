@@ -1,4 +1,4 @@
-package dio;
+package dio.p1;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
