@@ -1,0 +1,31 @@
+<div class="container mb-5">
+    <h1 class="mt-5 mb-5">Entre em contato conosco</h1>
+    <form>
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" 
+                   placeholder="Digite seu nome"
+                   [(ngModel)]="contato.nome" name="nome">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email"
+                   placeholder="name@example.com"
+                   [(ngModel)]="contato.email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3"
+                      [(ngModel)]="contato.mensagem" name="mensagem"></textarea>
+        </div>
+        <button class="btn btn-outline-dark" 
+                (click)="enviarMensagem()">Enviar</button>
+    </form>
+    <div *ngIf="urlEmail">
+        <hr>
+        <div class="d-flex justify-content-end mt-2" role="alert"  >
+            <a type="button" class="btn btn-warning w-25" target="_blank"
+               [href]="urlEmail">Visualizar Email no Servidor</a>
+        </div>
+    </div>    
+</div> 
