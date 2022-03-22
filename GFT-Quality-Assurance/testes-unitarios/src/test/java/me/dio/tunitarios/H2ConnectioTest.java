@@ -1,10 +1,7 @@
 package me.dio.tunitarios;
 
 import me.dio.tunitarios.dao.H2Connection;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.sql.*;
 
@@ -20,7 +17,10 @@ class H2ConnectionTest {
 
     @Test
     static void verificaBancoDeDadosTestExist() throws SQLException {
+        Assumptions.assumeTrue("sa".equals(connection.getMetaData().getUserName()));
+
         String schema = connection.getSchema();
+
         Assertions.assertEquals("TEST", schema);
     }
 
