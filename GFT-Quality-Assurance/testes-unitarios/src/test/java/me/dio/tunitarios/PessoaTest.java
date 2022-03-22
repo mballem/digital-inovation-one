@@ -1,11 +1,27 @@
 package me.dio.tunitarios;
 
+import me.dio.tunitarios.exception.NomeTamanhoInvalidoException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
 class PessoaTest {
+
+    @Test
+    void validaExcecaoComprimentoNomeInvalido() {
+        Pessoa pessoa =  new Pessoa("",
+                LocalDate.of(2000,1,1),
+                "Filmes", "Futebol", "Música");
+
+        Assertions.assertThrows(NomeTamanhoInvalidoException.class, pessoa::isNomeValido);
+
+        pessoa =  new Pessoa("Josivaldo Orlanado da Silva Gomes de Oliveira Andrade Neto",
+                LocalDate.of(2000,1,1),
+                "Filmes", "Futebol", "Música");
+
+        Assertions.assertThrows(NomeTamanhoInvalidoException.class, pessoa::isNomeValido);
+    }
 
     @Test
     void validaComprimentoDoNome() {
