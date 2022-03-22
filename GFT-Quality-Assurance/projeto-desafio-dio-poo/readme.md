@@ -3,8 +3,6 @@
 <p> Sejam bem-vindos ao desafio: <strong>APRENDENDO NA PRÁTICA O PARADIGMA DE ORIENTAÇÃO A OBJETOS.</strong><br>Desafio este que tive a honra de co-criar com a plataforma de cursos online <strong><a href="https://web.digitalinnovation.one/">DIGITAL INNOVATION ONE</a></strong> 💛🧡 e disponibilizado de forma gratuita para a comunidade dos desenvolvedores Java.<br>
     💎 O objetivo principal é colocar em prática umas das principais ferramentas da OO: <strong>ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO,</strong> através de um projeto Java. </p>
 
-
-
 <h2>🛑 Pré-Requisitos</h2>
 
 <p>
@@ -14,7 +12,6 @@
 ✅ Git<br>
 ✅ Conta no GitHub<br>
 </p>
-
 
 <h2> 👣 Passo-a-Passo</h2>
 
@@ -26,7 +23,7 @@
 <strong>	5.</strong> E para representar CLASSES que foram criadas e relacionadas, iremos transforma-las em OBJETOS<br>
 </p>
 
-----
+---
 
 <h2> 📚 Paradigma de Programação Orientado a Objetos (POO) </h2>
 
@@ -35,7 +32,6 @@ A visão de Orientação a Objetos (OO) é aquela de um mundo de objetos que int
 Este paradigma é um modelo de análise, projeto e programação baseado na aproximação entre o mundo real e o mundo virtual, através da criação e interação entre classes, atributos, métodos, objetos, entre outros.<br>
 São 4 os pilares principais do POO: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO. 
 </p>
-
 
 <h3>🔺 ABSTRAÇÃO:</h3>
 
@@ -79,8 +75,9 @@ Objeto em ciência da computação, é uma referência a um local da memória qu
 Uma instância de uma classe é um novo objeto criado dessa classe, com o operador new. Instanciar uma classe é criar um novo objeto do mesmo tipo dessa classe. Uma classe somente poderá ser utilizada após ser instanciada.
 
 </p>
-    
-------------
+
+---
+
 <br>
 
 <h2> 🧮 Linguagem de Programação vs Paradigma de Linguagem de Programação</h2>
@@ -110,8 +107,7 @@ Linguagens compiladas: C, C++, Pascal, D, GO, etc.<br>
 Linguagens Interpretadas: Python, Ruby, PHP, Javascript, etc.<br>
 Linguagens Hibridas: Java, Erlang, Elixir, etc.<br>
 
-
-<h3> ✨ PARADIGMA DE LINGUAGEM DE PROGRAMAÇÃO</h3> 
+<h3> ✨ PARADIGMA DE LINGUAGEM DE PROGRAMAÇÃO</h3>
 
 É um conjunto de características que podem ser utilizados para categorizar determinado grupo de linguagens. Um paradigma pode oferecer técnicas apropriadas para uma aplicação específica.<br>
 <br>
@@ -131,6 +127,7 @@ Vejamos alguns Subparadigmas do Paradigma Declarativo e exemplos linguagens de p
 <br>
 🔹 2.1 Paradigma Funcional: Lisp e Haskell<br>
 🔹 2.2 Paradigma Lógico: Prolog<br>
+
 </p>
 
 <h2> 🤝 Contribuindo </h2>
@@ -144,8 +141,7 @@ Se possível:<br>
 🐛 Encontrar e relatar issues<br>
 </p>
 
-
-
-------------
+---
 
 Disponibilizado com ♥ por [cami-la](https://www.linkedin.com/in/cami-la/ "cami-la").
+
