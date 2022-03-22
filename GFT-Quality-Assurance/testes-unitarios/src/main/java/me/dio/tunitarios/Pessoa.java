@@ -1,5 +1,7 @@
 package me.dio.tunitarios;
 
+import me.dio.tunitarios.exception.NomeTamanhoInvalidoException;
+
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
@@ -42,5 +44,12 @@ public class Pessoa {
 
     public String getHobby(String hobby) {
         return Arrays.stream(this.hobbies).filter(h -> h.equals(hobby)).collect(Collectors.joining());
+    }
+
+    public boolean isNomeValido() {
+        if (this.nome.length() > 0 && this.nome.length() <= 40) {
+            return true;
+        }
+        throw new NomeTamanhoInvalidoException("Nome deve ter entre 0 e 40 caracteres.");
     }
 }

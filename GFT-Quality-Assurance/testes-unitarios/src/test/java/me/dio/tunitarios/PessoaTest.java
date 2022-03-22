@@ -8,6 +8,15 @@ import java.time.LocalDate;
 class PessoaTest {
 
     @Test
+    void validaComprimentoDoNome() {
+        Pessoa pessoa =  new Pessoa("Joey",
+                LocalDate.of(2000,1,1),
+                "Filmes", "Futebol", "Música");
+
+        Assertions.assertTrue(pessoa.isNomeValido());
+    }
+
+    @Test
     void validaSeHobbyExiste() {
         Pessoa pessoa =  new Pessoa("Joey",
                 LocalDate.of(2000,1,1),
