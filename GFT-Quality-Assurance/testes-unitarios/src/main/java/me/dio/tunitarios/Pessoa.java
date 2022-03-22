@@ -2,6 +2,7 @@ package me.dio.tunitarios;
 
 import me.dio.tunitarios.exception.NomeTamanhoInvalidoException;
 
+import java.sql.Date;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
@@ -51,5 +52,13 @@ public class Pessoa {
             return true;
         }
         throw new NomeTamanhoInvalidoException("Nome deve ter entre 0 e 40 caracteres.");
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public LocalDate getNascimento() {
+        return this.nascimento;
     }
 }
