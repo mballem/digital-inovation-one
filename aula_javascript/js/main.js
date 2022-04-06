@@ -6,7 +6,7 @@ var idade = 30;
 console.log("Bem vindo " + nome + ", você tem " + idade + " anos.");
 
 var sobrenome = "Fulano";
-console.log(nome.replace("Beltrano", "Fulano"));
+console.log(nome.replace("Beltrano", "Ciclano"));
 console.log(nome.toUpperCase());
 console.log(nome.toLowerCase());
 
