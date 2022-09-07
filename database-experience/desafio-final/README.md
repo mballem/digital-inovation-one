@@ -105,4 +105,5 @@ Enquanto no modelo relacional temos o conceito ACID, os não relacionais fazem u
 * E (Eventually Consistent) – a consistência é eventual, ou seja, em um momento indeterminado. 
 
 Alguns dos SGBDs não relacionais e suas classificações:
+
 ![Orientados a Grafos](https://github.com/mballem/digital-inovation-one/blob/master/database-experience/desafio-final/image/nosql-types.png)
