@@ -1,116 +1,219 @@
-# Desafio Final Database Experience Dio
+# Desafio Projeto Lógico Database Experience Dio
 
 ## 📑 Descrição do Desafio
 Assim como demonstrado durante o desafio, realize a criação do Script SQL para criação do esquema do banco de dados. Posteriormente, realize a persistência de dados para realização de testes. Especifique ainda queries mais complexas dos que apresentadas durante a explicação do desafio. Sendo assim, crie queries SQL com as cláusulas abaixo:
 
-Recuperações simples com SELECT Statement
-Filtros com WHERE Statement
-Crie expressões para gerar atributos derivados
-Defina ordenações dos dados com ORDER BY
-Condições de filtros aos grupos – HAVING Statement
-Crie junções entre tabelas para fornecer uma perspectiva mais complexa dos dados
+📌 Recuperações simples com SELECT Statement
+* Filtros com WHERE Statement
+* Crie expressões para gerar atributos derivados
+* Defina ordenações dos dados com ORDER BY
+* Condições de filtros aos grupos – HAVING Statement
+* Crie junções entre tabelas para fornecer uma perspectiva mais complexa dos dados
 
-### Banco de Dados
-Um banco de dados é uma coleção organizada de informações estruturadas. Essas informações são nomeadas como registros ou dados e gerenciadas por um sistema de gerenciamento de banco de dados (SGDB). 
+📌 Diretrizes
+* Não há um mínimo de queries a serem realizadas;
+* Os tópicos supracitados devem estar presentes nas queries;
+* Elabore perguntas que podem ser respondidas pelas consultas;
+* As cláusulas podem estar presentes em mais de uma query;
 
-Um banco de dados pode ser seguir o modelo relacional ou não relacional. Este último, conhecido também como NoSQL. 
+🎯 Objetivo:
+-- Aplique o mapeamento para o  cenário:
 
-📃 **O Modelo Relacional**
-Os bancos de dados relacionais se tornaram dominantes na década de 1980. Os registros em um banco de dados relacional são organizados como um conjunto de tabelas com colunas e linhas. 
+“Refine o modelo apresentado acrescentando os seguintes pontos”
 
-O modelo de banco de dados relacional tem características importantes como a restrição de integridade para garantir a consistência dos registros armazenados nas tabelas. Esta restrição é realizada a partir do uso de chaves primárias (PK) e também de chaves estrangeiras (FK).
+* Cliente PJ e PF – Uma conta pode ser PJ ou PF, mas não pode ter as duas informações;
+* Pagamento – Pode ter cadastrado mais de uma forma de pagamento;
+* Entrega – Possui status e código de rastreio;
 
-Outra caracteristica importante para o modelo relacional é o processo de normalização. Este processo possui uma sequência de passos que separa os tipos de dados em tabelas especificas que os representam mais adequadamente. A partir da normalização são criados os relacionamentos entre tabelas baseados em PKs e FKs. Com o uso da normalização alcançamos um armazenamento mais consistente dos dados, reduziindo a redundância e criando um eficiente acesso aos registros por meio dos relacionamentos.
+Algumas das perguntas que podes fazer para embasar as queries SQL:
 
-No modelo ralcional o acesso aos dados é realizado por meio de SQL (Structured Query Language), uma criada pela IBM e inspirada em álgebra relacional. Embora os SGBDs adotem o SQL como linguagem padrão do modelo relacional, existem comandos que podem ser específicos para cada SGBD, fazendo com que instruções, como em consultas aos dados, percam a portabilidade entre SGBDs distintos.
-É por meio de SQL que criamos tabelas, colunas, índices, inserimos ou atualizamos registros e, principalmente, consultamos os dados armazenados em tabelas.
-Existem alguns tipos distintos de definições para a execução dos comandos SQL como:
-* DDL - Data Definition Language - Conjunto de comandos que lidam com os objetos, criando bancos de dados, esquemas, tabelas, campos, etc. Dentre os mais utilizados temos CREATE, ALTER e DROP. Exemplo:
-`CREATE TABLE usuario`
-* DML - Data Manipulation Language - Os comandos aqui lidam com os dados. Alguns muito comuns são INSERT, UPDATE e DELETE. Exemplo:
-`INSERT INTO usuario (nome, sobrenome) VALUES ('Beltrano', 'da Silva')`
-* DQL - Data Query Language - Linguagem de consulta de dados conta com o conjunto da instrução utilizada para a obtenção dos registros dos bancos de dados. Exemplo:
-`SELECT nome, sobrenome FROM usuario`
-* DTL - Data Transaction Language - Linguagem de transação de dados que conta com o conjunto de instruções usadas para gerenciar as transações que ocorrem dentro do banco de dados. Exemplo:
-`BEGIN TRAN`
-* DCL - Data Control Language - Linguagem de controle de dados possui o conjunto das instruções usadas para controlar o acesso e gerenciar permissões de usuários no banco de dados. Exemplo:
-`GRANT CREATE TABLE to usuario`
+* Quantos pedidos foram feitos por cada cliente?
+* Algum vendedor também é fornecedor?
+* Relação de produtos fornecedores e estoques;
+* Relação de nomes dos fornecedores e nomes dos produtos;
 
-Os SGBDs no mundo relacional possuem um conceito importantissimo chamado ACID. Esse conceito se refere às quatro propriedades de transação de um sistema de banco de dados: Atomicidade, Consistência, Isolamento e Durabilidade.
-*  	Atomicidade – verifica se uma transação foi bem sucedida ou não. Em caso negativo será realizado um rollback total da transação.
-*  	Consistência – garante que depois de uma transação bem sucedida, os dados afetados são mantidos em um estado consistente;
-*  	Isolamento – cada transação deve ser executada de forma isolada, sem afetar o estado de outras transações;
-*  	Durabilidade – o resultado de uma transação é permanente, assim, há a garantia do que foi salvo não será perdido.
+### Banco de Dados E-commerce
 
-Exemplo de uma uma consulta realizado sobre a tabela `city` no modelo relacional:
+* [Scrip schema ecommerce](https://github.com/mballem/digital-inovation-one/blob/master/database-experience/desafio-projeto-logico/schema.sql)
+* [Scrip data ecommerce](https://github.com/mballem/digital-inovation-one/blob/master/database-experience/desafio-projeto-logico/data.sql)
 
-    mysql> select * from city limit 5;
-    +----+----------------+-------------+---------------+------------+
-    | ID | Name           | CountryCode | District      | Population |
-    +----+----------------+-------------+---------------+------------+
-    |  1 | Kabul          | AFG         | Kabol         |    1780000 |
-    |  2 | Qandahar       | AFG         | Qandahar      |     237500 |
-    |  3 | Herat          | AFG         | Herat         |     186800 |
-    |  4 | Mazar-e-Sharif | AFG         | Balkh         |     127800 |
-    |  5 | Amsterdam      | NLD         | Noord-Holland |     731200 |
-    +----+----------------+-------------+---------------+------------+
-    5 rows in set (0.00 sec)
+🔎  Quantos pedidos foram feitos por cada cliente?
+```sql
+select c.ID_CLIENTE as 'cliente id' , count(p.ID_PEDIDO) as 'total de pedidos'
+from pedido p 
+join cliente c 
+	on c.ID_CLIENTE = p.ID_CLIENTE
+group by c.id_cliente;
+```
+**Result:**
+```
+# cliente id	total de pedidos
+1	            2
+2           	1
+3           	2
+4	            1
+5	            1
+6	            1
+7	            2
+```
 
-Alguns dos SGBDs relacionais mais conhecidos e utilizados no mercado:
-1. Oracle
-2. SQL Server
-3. MySQL
-4. PostgreSQL
-5. IBM DB2 
+🔎 Quais os produtos de cada fornecedor?
+```sql
+select f.RAZAO_SOCIAL, p.ID_PRODUTO, p.DESCRICAO
+from produto p
+join fornecedor_tem_produto fp
+	on p.ID_PRODUTO = fp.ID_PRODUTO
+join fornecedor f
+	on f.ID_FORNECEDOR = fp.ID_FORNECEDOR
+order by f.RAZAO_SOCIAL;   
+```
+**Resultado:**
+```
+# RAZAO_SOCIAL	        ID_PRODUTO	DESCRICAO
+Agro Matias & Mattos	16      	Anti Pulga 1 dose
+Agro Matias & Mattos	17	        Coleira e Guia
+Agro Matias & Mattos	18	        Talco Banho
+Agro Matias & Mattos	19	        Sabonete 
+California Moveis	    7	        Roupeiro 3 Portas
+California Moveis	    8       	Ropeiro 2 Portas
+Eltro Toda Casa	        1	        Refrigerador
+Eltro Toda Casa	        2	        Fogão
+Food e Drinks Ltda	    12	        Caixa Bombom Garoto
+Food e Drinks Ltda	    13	        Barra Ao Leite Garoto
+Food e Drinks Ltda  	14	        Kit Kat Dark
+Food e Drinks Ltda	    15	        Cebolitos Elma Chips
+Hardware Store      	20	        Microfone
+Hardware Store	        21	        Radio Relógio
+Hardware Store	        22	        TV Led LG 50
+Industria Covala	    6	        Jogo de Cama
+Industria Covala    	9	        Camisa Polo
+Industria Covala	    10	        Camisa Regata
+Industria Covala	    11	        Bermuda Surfista
+Industria Covala	    5	        Jogo de Mesa
+Informativa Ativa	    3	        PC Lenovo XX45
+Informativa Ativa	    4	        PC ACER T99
+```
 
-📃 **O Modelo Não Relacional - NoSQL**
-Os bancos de dados não relacionais, como o nome bem diz, não seguem os conceitos do modelo relacional. Este tipo de banco de dados se tornou conhecido pelo nome NoSQL (Not Only SQL).
+🔎 Qual o valor médido e total de vendas no e-commerce? 
+-- Fixar os centavos em duas casas decimais.
+```sql
+select 
+    round(avg(p.VALOR_PEDIDO), 2) as 'valor médio', 
+    round(sum(p.VALOR_PEDIDO), 2) as 'valor total'
+from 
+    pedido p;  
+```
+**Resultado:**
+```
+# valor médio   	valor total
+  2420.67	        24206.69
+```
 
-Enquanto os SGBDs Relacionais seguem um padrão de armazenamento e manipulação de dados, como o uso do SQL, os não relacionais não possuem nenhum padrão a ser seguido. Cada SGBD não relacional pode ter seu próprio formato de dados, de armazenamento e linguagem de manipulção dos registros. 
-Até este momento existem pelo menos quatro classificações de banco de dados não relacionais que são: 
-* Orientandos a chave-valor
-* Orientandos a colunas
-* Orientandos a documentos
-* Orientandos a grafos.
+🔎 Qual o valor total por tipo de pagamento?
+-- Fixar os centavos em duas casas decimais.
+```sql
+select tp.TIPO as tipo, round(sum(p.VALOR_PEDIDO), 2) as valor
+from pedido p, tipo_pagamento tp
+where p.ID_TIPO_PAGAMENTO = tp.ID_TIPO_PAGAMENTO
+group by tipo;
+```
+**Resultado:**
+```
+# tipo	            valor
+CARTAO VISA	        9424.04
+CARTAO MASTERCARD	658.00
+CARTAO ELO	        3501.26
+BOLETO	            5780.99
+PIX	                4842.40
+```
 
-#### Orientados a Chave Valor
-Os SGDBs orientados a chave-valor (Key-Value Store) são considerados o modelo mais simples de armazenamento entre as classificações NoSQL. Bem como sugere o nome, o armazenamento é realizado por meio de uma chave contida por um valor. O valor de uma chave pode ser único ou mesmo um tipo de lista. 
-Segue um exemplo desse tipo de armazenamento:
+🔎  Listar o id do cliente, o valor total do pedido (frete + pedido) e data do pedido daqueles realizados no ano de 2021:
+```sql
+select 
+    p.ID_CLIENTE as 'id cliente', 
+    (p.VALOR_FRETE + p.VALOR_PEDIDO) as 'valor total',
+    p.DATA_PEDIDO as 'data do pedido'
+from 
+    pedido p
+where 
+    YEAR(p.DATA_PEDIDO) = 2021;
+```
+**Resultado:**
+```
+# id cliente	valor total	    data do pedido
+1	            2109.64	        2021-08-01
+2	            281.39	        2021-08-01
+```
 
-    Key | Value
-    101 | nome: 'Fulano de Tal'
-    102 | {nome: 'Beltrano', sobrenome: 'de Tal'}
+🔎  Qual menor e o de maior valor de pedidos considerenco o frete?
+```sql
+select 
+    min((p.VALOR_PEDIDO + p.VALOR_FRETE)) as 'menor valor', 
+    max((p.VALOR_PEDIDO + p.VALOR_FRETE)) as 'maior valor'
+from 
+    pedido p;
+```
+**Resultado:**
+```
+# menor valor	maior valor
+52.59	        5820.80
+```
 
-#### Orientados a Colunas
-Os bancos de dados orientados a colunas (Wide Columns Store ou Columnar) são considerados mais complexos que os orientados a chave-valor. Esta classificação de SGBDs trabalha com um sistema de armazenamento via tabelas e, os dados, são agrupados por colunas, o que reduz o tempo de leitura e escrita em disco. A diferença entre as tabelas do modelo relacional e o modelo não relacional, do tipo colunar, é que o relacional agrupa os dados orientados em linhas de uma tabela, enquanto o colunar, como já citado, armazena os dados orientados por colunas. Observe o exemplo a seguir:
+🔎  Qual a data do pedido, a data do cancelamento do pedido e o nome do cliente entre os pedidos cancelados?
+```sql
+select 
+	p.DATA_PEDIDO as 'Data do Pedido', 
+    ps.DATA_FIM as 'Data do Cancelamento', 
+    case
+		when c.ID_CLIENTE = pf.ID_CLIENTE then pf.NOME
+        when c.ID_CLIENTE = pj.ID_CLIENTE then pj.RAZAO_SOCIAL
+    end as 'Nome do Cliente'
+from pessoa_fisica pf, pessoa_juridica pj, cliente c, pedido p
+join pedido_tem_status ps
+	on p.ID_PEDIDO = ps.ID_PEDIDO
+join status s
+	on ps.ID_STATUS = s.ID_STATUS_PEDIDO
+where 
+	s.TIPO = 'CANCELADO'
+and	p.ID_CLIENTE = c.ID_CLIENTE 
+and (c.ID_CLIENTE = pf.ID_CLIENTE or c.ID_CLIENTE = pj.ID_CLIENTE)
+group by p.ID_PEDIDO;
+```
+**Resultado:**
+```
+# Data do Pedido	Data do Cancelamento	Nome do Cliente
+2022-09-06	        2022-09-07	            Rita de Cassia Sousa
+2022-09-03	        2022-09-04	            Jussara da Silva
+```
 
-    Ana         | Mario      | José          | Luísa             | Pietra
-    São Paulo   | Campinas   | Porto Alegre  | Rio de Janeiro    | Porto Alegre
-    1990-10-01  | 1994-05-07 | 1989-10-17    | 1999-06-08        | 2001-03-07 
-
-Cada coluna da tabela possui os regristros de uma pessoa (nome, cidade e data de nascimento).
-
-#### Orientados a Documentos
-Os bancos de dados orientados a documentos (Document-Oriented) armazenam os registros em forma de documentos. Estes documentos podem ser semelhamentes a um arquivo XML ou JSON. A ideia principal é que cada documento irá conter todos os dados de uma determinada entidade. Este modelo de armazenamento permite um alto nível de flexibilidade, não dependendo de um esquema rígido ou de uma estrutura fixa. Deste modo os documentos se tornam flexiveis de forma que cada documento pode possuir diferentes campos de dados. O modelo documental terá um identificador único, similar a chave primária de um banco de dados relacional. Abaixo um exemplo de um documento no formato JSON:
-
-    {
-        _id : 57,
-        name: ‘Fulano de Tal’,
-        age: 55,
-        city: ‘Rio de Janeiro’,
-        tags: ['filmes', 'futebol', 'animes']	
-    }
-
-#### Orientados a Grafos
-Talvez um dos menos populares entre os não relacionais são os orientados a grafos (Graph Store). Este modele de armazenamento utiliza nós (nodes) que se relacionam com outros nós. Os nós são formados por propriedades do tipo chave-valor para armazenar os resgistro. Segue um exemplo de armazenamento por grafo:
-
-![Orientados a Grafos](https://github.com/mballem/digital-inovation-one/blob/master/database-experience/desafio-final/image/graph-store.png)
-
-Enquanto no modelo relacional temos o conceito ACID, os não relacionais fazem uso do conceito BASE. Este conceito parte do principio que enquanto uma aplicação está disponível o tempo todo, a base de dados não precisaria ser consistente todo o tempo. Isso tornaria a base dade consistente eventualmente, o que agiliza não somente o desempenho das consultas, mas muitas vezes as operações de escritas:
-* BA (Basically Available) – sigla que representa o conceito de basicamente disponível. Tem relação direta com a disponibilidade de dados;
-* S (Soft State) – possuir estado leve, ou seja, o sistema não precisa estar consistente o tempo todo;
-* E (Eventually Consistent) – a consistência é eventual, ou seja, em um momento indeterminado. 
-
-Alguns dos SGBDs não relacionais e suas classificações:
-
-![Orientados a Grafos](https://github.com/mballem/digital-inovation-one/blob/master/database-experience/desafio-final/image/nosql-types.png)
+🔎  Localizar os clientes que fizeram pedidos e retornar o CPF formatado, caso o cliente seja pessoa fisica, ou o CNPJ formatado, caso o cliente seja pessoa juridica. Retornar o nome ou razão social dos clientes localizados. 
+```sql
+select distinct
+	case
+		when c.ID_CLIENTE = pf.ID_CLIENTE then 
+			concat( SUBSTRING(pf.CPF, 1, 3),'.', SUBSTRING(pf.CPF, 4, 3),'.', SUBSTRING(pf.CPF, 7, 3),'-', SUBSTRING(pf.CPF, 10, 2) ) 
+        when c.ID_CLIENTE = pj.ID_CLIENTE then 
+			concat( SUBSTRING(pj.CNPJ, 1, 2),'.', SUBSTRING(pj.CNPJ, 3, 3),'.', SUBSTRING(pj.CNPJ, 6, 3),'/', SUBSTRING(pj.CNPJ, 9, 4),'-', SUBSTRING(pj.CNPJ, 13, 2)) 
+    end as documento,
+ 	case
+		when c.ID_CLIENTE = pf.ID_CLIENTE then pf.NOME
+        when c.ID_CLIENTE = pj.ID_CLIENTE then pj.RAZAO_SOCIAL
+    end as nome   
+from pessoa_fisica pf, pessoa_juridica pj, cliente c
+join pedido p
+	on c.ID_CLIENTE = p.ID_CLIENTE
+where
+	c.ID_CLIENTE = pf.ID_CLIENTE 
+or  c.ID_CLIENTE = pj.ID_CLIENTE;
+```
+**Resultado:**
+```
+# documento	        nome
+963.852.741-98	    Pietra Ramos
+963.852.741-40  	Ricardo Camargo
+853.852.741-98	    Rita de Cassia Sousa
+968.542.741-98	    Mario Borges
+742.852.741-98	    Jussara da Silva
+745.669.200-78	    Otavio Santos
+32.205.035/0001-53	Papelaria Silva
+```
