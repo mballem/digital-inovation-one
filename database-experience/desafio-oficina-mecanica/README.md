@@ -42,7 +42,7 @@ Após a criação do esquema lógico, realize a criação do Script SQL para cri
 
 ### Banco de Dados Oficina Mecânica
 * [Scrip schema Oficina Mecânica](https://github.com/mballem/digital-inovation-one/blob/master/database-experience/desafio-oficina-mecanica/script-sql/schema.sql)
-* [Scrip data Oficina Mecânica]((https://github.com/mballem/digital-inovation-one/blob/master/database-experience/desafio-oficina-mecanica/script-sql/data.sql)
+* [Scrip data Oficina Mecânica](https://github.com/mballem/digital-inovation-one/blob/master/database-experience/desafio-oficina-mecanica/script-sql/data.sql)
 
 🔎  Retorne o total de Ordens de Serviços
 ```sql
