@@ -2,6 +2,12 @@
 
 Projetos desenvolvidos em alguns cursos e bootcamps da plataforma Dio:
 
+## 🎓 Québec Java Digital (93 hrs)
+São 95 horas de desenvolvimento em back-end com Java e Spring Framework para você evoluir habilidades e otimizar seu código. O Governo do Québec, maior província do Canadá e que tem o francês como idioma principal, selou uma parceria com a DIO que vai melhor capacitar profissionais e talentos às oportunidades de trabalho no Québec. Sendo uma das maiores plataforma de educação e recrutamento da América Latina, a DIO vai facilitar o acesso de profissionais que desejam uma carreira internacional a empresas que buscam colaboradores capacitados.
+
+👁️ [Certificado GFT Quality Assurance #1](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-quebec-java-digital.pdf)
+
+
 ## 🎓 Database Experience (54 hrs)
 Este é o primeiro bootcamp sobre Banco de Dados da DIO para profissionais que procuram uma experiência rápida em Ciência de Dados para se aprimorar nos principais conceitos de banco de dados SQL e NoSQL. No Database Experience você vai passar por 54 horas de imersão, com experiências educacionais e mentorias exclusivas sobre modelagem de dados, SGBD, EER, arquitetura, queries entre outras.
 
