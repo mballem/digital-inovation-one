@@ -1,18 +1,16 @@
 .container__title {
-  color: #fff;
+  color: white;
 }
 
 .container__title > h1 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 135px;
+  font-size: 260px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
 }
 
 .container__title > hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  border-color: grey;
 }
 

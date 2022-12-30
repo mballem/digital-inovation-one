@@ -1,0 +1,22 @@
+
+.containter__menu-bar {
+  display: flex;
+  flex-direction: row;
+}
+.containter__menu-bar_lista > ul {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px; /* centraliza com a image */
+}
+
+.containter__menu-bar_lista > ul > li {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.containter__menu-bar_logo > img {
+  margin-right: 30px;
+  width: 50px;
+  border-radius: 50%;
+}
+
