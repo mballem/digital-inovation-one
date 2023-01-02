@@ -1,4 +1,5 @@
 .container__title {
+  width: 100%;
   color: white;
 }
 
@@ -10,7 +11,7 @@
 }
 
 .container__title > hr {
-
   border-color: grey;
+  width: 100%;
 }
 

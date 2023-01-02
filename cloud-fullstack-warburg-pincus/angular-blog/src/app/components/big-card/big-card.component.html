@@ -1,20 +1,18 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img src="https://i0.wp.com/arteref.com/wp-content/uploads/2022/10/DESTAQUE-14.jpg?fit=900%2C700&ssl=1">
+    <img src="{{ photoCover }}">
     <div class="big-card__photo__data">
-      <p>April 21, 2022</p>
+      <p>{{ cardDate }}</p>
     </div>
   </div>
   <div class="big-card__title">
     <h1>
-      <a href="#" title="Estudo complementar de angular">Estudo complementar de angular</a>
+      <a href="#" title="{{ cardTitle }}">{{ cardTitle }}</a>
     </h1>
   </div>
   <div class="big-card__description">
     <p>
-      <a href="#" title="Estudo complementar de angular">Angular lets you start
-        small and supports you as your team and apps grow. Angular lets.
-        Join the millions of developers building. Angular lets.
+      <a href="#">{{ cardDescription }}
       </a>
     </p>
   </div>
