@@ -6,8 +6,7 @@
     <div class="small-card__title">
       <p>{{ cardDate }}</p>
       <h1>
-        <a href="#" title="...">{{ cardTitle }}
-        </a>
+        <a [routerLink]="['content', id]" title="...">{{ cardTitle }}</a>
       </h1>
     </div>
   </div>

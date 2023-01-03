@@ -6,6 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./big-card.component.css']
 })
 export class BigCardComponent implements OnInit {
+  @Input()
+  id: string | null = "0";
 
   @Input()
   photoCover: string = ""
@@ -14,10 +16,10 @@ export class BigCardComponent implements OnInit {
   cardTitle: string = ""
 
   @Input()
-  cardDescription: string = "Mural Etnias no Rio de Janeiro Mural Etnias no Rio de Janeiro"
+  cardDescription: string = ""
 
   @Input()
-  cardDate: string = "Janeiro 11, 2021"
+  cardDate: string = ""
 
   constructor() { }
 
