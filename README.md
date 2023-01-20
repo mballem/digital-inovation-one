@@ -13,19 +13,21 @@ temos:
 *   Introdução a Java
 *   Introdução a Bancos de dados SQL e NoSQL
 *   Produtividade com Spring Framework 
-        *   Spring Boot
-        *   Spring MVC
-        *   Spring Security
-        *   Spring Data JPA
-        *   API Rest
-*   Principios Cloud Computer com AWS
-        *   DynamoDB
-        *   Lambda 
-        *   S3
-        *   API Gateway
-        *   CloudWatch
-        *   IAM
-        *   Serverless Framework        
+    *   Spring Boot
+    *   Spring MVC
+    *   Spring Security
+    *   Spring Data JPA
+    *   API Rest
+*   Principios Cloud Computer com AWS 
+    *   DynamoDB 
+    *   Lambda 
+    *   S3 
+    *   API Gateway 
+    *   CloudWatch 
+    *   IAM 
+    *   Serverless Framework    
+
+
 
 👁️ [Cloud Fullstack Bootcamp - Warburg Pincus](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-cloud-fullstack-warburg-pincus.pdf)
 
