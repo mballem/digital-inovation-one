@@ -1,0 +1,70 @@
+service: dio-aws-final-project
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  iam:
+      role:
+          statements:
+            - Effect: Allow
+              Action:
+                - dynamodb:PutItem
+                - dynamodb:UpdateItem
+                - dynamodb:GetItem
+                - dynamodb:Scan
+                - dynamodb:DeleteItem
+              Resource: 
+                - arn:aws:dynamodb:us-east-1:561858204238:table/ItemTableNew
+
+functions:
+  hello:
+    handler: src/handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
+  insertItem:    
+    handler: src/insertItem.handler
+    events:
+      - httpApi:
+          path: /item
+          method: post
+  getAllItems:    
+    handler: src/getAllItems.handler
+    events:
+      - httpApi:
+          path: /item
+          method: get        
+  getItem:    
+    handler: src/getItem.handler
+    events:
+      - httpApi:
+          path: /item/{id}
+          method: get  
+  updateItem:    
+    handler: src/updateItem.handler
+    events:
+      - httpApi:
+          path: /item/{id}
+          method: put       
+  deleteItem:    
+    handler: src/deleteItem.handler
+    events:
+      - httpApi:
+          path: /item/{id}
+          method: delete                          
+
+resources:
+  Resources:
+    ItemTableNew:
+      Type: AWS::DynamoDB::Table           
+      Properties:
+        TableName: ItemTableNew
+        BillingMode: PAY_PER_REQUEST
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH    
