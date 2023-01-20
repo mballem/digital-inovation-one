@@ -2,6 +2,33 @@
 
 Participações em cursos e bootcamps da plataforma Dio:
 
+## 🎓 Cloud Fullstack Bootcamp - Warburg Pincus (151 hrs)
+Chegaram 7 novas empresas na DIO juntamente com uma trilha super completa em Fullstack com cloud! Se você quer começar na carreira de Fullstack ou está em busca de novas oportunidades, inscreva-se no Cloud Fullstack Bootcamp - Warburg Pincus, com 151 horas de experiência educacionais que abrangem as principais tecnologias para se tornar um(a) profissional Fullstack. Ao gerar a sua certificação, o seu perfil terá visibilidade para 6 grandes empresas, são elas: Warburg Pincus, Sólides, TakeBlip, Eleva Educação, Superlógica, Americanet e Blu.
+O Cloud Fullstack Bootcamp - Warburg Pincus possui 151 horas de experiências educacionais que abrangem as principais tecnologias para se tornar um profissional Fullstack com cloud. Entre as tecnologias apresentadas 
+temos:
+*   Git e Github
+*   Páginas interativas com JavaScript com a construção de um cliente que consome a Pokédex API
+*   Desafios de código em Java e JavaScript
+*   Introcução a Angular 14   
+*   Introdução a Java
+*   Introdução a Bancos de dados SQL e NoSQL
+*   Produtividade com Spring Framework 
+        -   Spring Boot
+        -   Spring MVC
+        -   Spring Security
+        -   Spring Data JPA
+        -   API Rest
+*   Principios Cloud Computer com AWS
+        -   DynamoDB
+        -   Lambda 
+        -   S3
+        -   API Gateway
+        -   CloudWatch
+        -   IAM
+        -   Serverless Framework        
+
+👁️ [Cloud Fullstack Bootcamp - Warburg Pincus](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-cloud-fullstack-warburg-pincus.pdf)
+
 ## 🎓 Potência Tech powered by iFood - Java Beginners (91 hrs)
  O Potência Tech Powered by iFood - Java Beginners é uma trilha com conteúdos completos, desafios de projetos, mentorias ao vivo e networking com a comunidade.  
  As jornadas exploram os Principios de Desenvolvimento de Software, Programação Java,
