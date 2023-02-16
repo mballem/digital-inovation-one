@@ -2,6 +2,20 @@
 
 Participações em cursos e bootcamps da plataforma Dio:
 
+## 🎓 GFT Java & AWS Developer! (50 hrs)
+O bootcamp GFT Java & AWS Developer tem o propósito de formar profissionais Fullstack nas tecnologias de Java e AWS em parceria da DIO com a multinacional GFT. Com o objetivo de desenvolver tecnologia da informação e serviços pioneiros, ajudando a reger tranformações em um programa completo e com foco em desenvolvimento Java.
+
+No Bootcamp GFT Java & AWS Developer, você irá:
+
+⚡Se especializar em Spring Boot – um projeto da Spring que veio para facilitar o processo de configuração e publicação de nossas aplicações;
+⚡Melhorar sua performance AWS – que tem o poder de rodar centenas de milhares de servidores em um minuto, oferecendo resultados mais rapidamente;
+⚡ Expadir seus conhecimentos em TypeScript – uma versão ainda mais escalonável da linguagem JavaScript, fornecendo classes, interfaces e tipagem estática opcional;
+⚡ Capacitar-se em Java - a tecnologia de desenvolvimento mais utilizada no mundo.
+
+Aprofunde o seu conhecimento, desenvolva seu raciocínio lógico e construa projetos com entregáveis de código com os melhores experts do mercado para estar mais próximo(a) de uma oportunidade de ingressar na GFT, uma das maiores empresas de tecnologia do mundo!
+
+👁️ [GFT Java & AWS Developer!](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-gft-java-aws-developer.pdf)
+
 ## 🎓 Cloud Fullstack Bootcamp - Warburg Pincus (151 hrs)
 Chegaram 7 novas empresas na DIO juntamente com uma trilha super completa em Fullstack com cloud! Se você quer começar na carreira de Fullstack ou está em busca de novas oportunidades, inscreva-se no Cloud Fullstack Bootcamp - Warburg Pincus, com 151 horas de experiência educacionais que abrangem as principais tecnologias para se tornar um(a) profissional Fullstack. Ao gerar a sua certificação, o seu perfil terá visibilidade para 6 grandes empresas, são elas: Warburg Pincus, Sólides, TakeBlip, Eleva Educação, Superlógica, Americanet e Blu.
 O Cloud Fullstack Bootcamp - Warburg Pincus possui 151 horas de experiências educacionais que abrangem as principais tecnologias para se tornar um profissional Fullstack com cloud. Entre as tecnologias apresentadas 
