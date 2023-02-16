@@ -8,8 +8,11 @@ O bootcamp GFT Java & AWS Developer tem o propósito de formar profissionais Ful
 No Bootcamp GFT Java & AWS Developer, você irá:
 
 ⚡Se especializar em Spring Boot – um projeto da Spring que veio para facilitar o processo de configuração e publicação de nossas aplicações;
+
 ⚡Melhorar sua performance AWS – que tem o poder de rodar centenas de milhares de servidores em um minuto, oferecendo resultados mais rapidamente;
+
 ⚡ Expadir seus conhecimentos em TypeScript – uma versão ainda mais escalonável da linguagem JavaScript, fornecendo classes, interfaces e tipagem estática opcional;
+
 ⚡ Capacitar-se em Java - a tecnologia de desenvolvimento mais utilizada no mundo.
 
 Aprofunde o seu conhecimento, desenvolva seu raciocínio lógico e construa projetos com entregáveis de código com os melhores experts do mercado para estar mais próximo(a) de uma oportunidade de ingressar na GFT, uma das maiores empresas de tecnologia do mundo!
