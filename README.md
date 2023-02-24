@@ -2,6 +2,24 @@
 
 Participações em cursos e bootcamps da plataforma Dio:
 
+## 🎓 Banco PAN Java Developer (114 hrs)
+O bootcamp Banco PAN Java Developer foi pensado para desenvolver as habilidades em Java Spring Boot, e descobrir como é trabalhar no Banco PAN. Durante a trilha, além dos cursos, teremos desafios de códigos, desenvolvimento de projetos e mentorias com especialistas.
+
+No Bootcamp Banco PAN Java Developer, você irá explorar:
+
+⚡ Princípios de Desenvolvimento em Software  
+⚡ Conhecendo a Linguagem de Programação Java  
+⚡ Dominando Algoritmos Básicos  
+⚡ Programação Orientada a Objetos com Java  
+⚡ Banco de Dados SQL e NoSQL
+⚡ Ganhando Produtividade com Spring Framework 
+⚡ Desafios de Código Java
+
+Durante a trilha, além dos cursos, desafios e mentorias, você irá conhecer um pouco mais sobre os projetos e cultura dessa super empresa, que possui expectativa de contratação através da Talent Match, para vagas nível Brasil (Home Office).
+
+👁️ [Banco PAN Java Developer](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-banco-pan-java-developer.pdf)
+
+
 ## 🎓 GFT Java & AWS Developer! (50 hrs)
 O bootcamp GFT Java & AWS Developer tem o propósito de formar profissionais Fullstack nas tecnologias de Java e AWS em parceria da DIO com a multinacional GFT. Com o objetivo de desenvolver tecnologia da informação e serviços pioneiros, ajudando a reger tranformações em um programa completo e com foco em desenvolvimento Java.
 
@@ -23,19 +41,19 @@ Aprofunde o seu conhecimento, desenvolva seu raciocínio lógico e construa proj
 Chegaram 7 novas empresas na DIO juntamente com uma trilha super completa em Fullstack com cloud! Se você quer começar na carreira de Fullstack ou está em busca de novas oportunidades, inscreva-se no Cloud Fullstack Bootcamp - Warburg Pincus, com 151 horas de experiência educacionais que abrangem as principais tecnologias para se tornar um(a) profissional Fullstack. Ao gerar a sua certificação, o seu perfil terá visibilidade para 6 grandes empresas, são elas: Warburg Pincus, Sólides, TakeBlip, Eleva Educação, Superlógica, Americanet e Blu.
 O Cloud Fullstack Bootcamp - Warburg Pincus possui 151 horas de experiências educacionais que abrangem as principais tecnologias para se tornar um profissional Fullstack com cloud. Entre as tecnologias apresentadas 
 temos:
-*   Git e Github
-*   Páginas interativas com JavaScript com a construção de um cliente que consome a Pokédex API
-*   Desafios de código em Java e JavaScript
-*   Introcução a Angular 14   
-*   Introdução a Java
-*   Introdução a Bancos de dados SQL e NoSQL
-*   Produtividade com Spring Framework 
+⚡   Git e Github
+⚡   Páginas interativas com JavaScript com a construção de um cliente que consome a Pokédex API
+⚡   Desafios de código em Java e JavaScript
+⚡   Introcução a Angular 14   
+⚡   Introdução a Java
+⚡   Introdução a Bancos de dados SQL e NoSQL
+⚡   Produtividade com Spring Framework 
     *   Spring Boot
     *   Spring MVC
     *   Spring Security
     *   Spring Data JPA
     *   API Rest
-*   Principios Cloud Computer com AWS 
+⚡   Principios Cloud Computer com AWS 
     *   DynamoDB 
     *   Lambda 
     *   S3 
@@ -43,8 +61,6 @@ temos:
     *   CloudWatch 
     *   IAM 
     *   Serverless Framework    
-
-
 
 👁️ [Cloud Fullstack Bootcamp - Warburg Pincus](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-cloud-fullstack-warburg-pincus.pdf)
 
