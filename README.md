@@ -1,6 +1,12 @@
 # Digital Inovation One | Dio
 
-Participações em cursos e bootcamps da plataforma Dio:
+Participações em cursos e bootcamps e codecamps da plataforma Dio:
+
+## 🎓 Codecamp | 1st Edition – Vale do Jacarandá Dourado (14 hrs)
+O Codecamp 1st Edition é o primeiro torneio da DIO somente com desafios de códigos práticos para você testar os limites de conhecimento em programação com JavaScript. 
+Será uma competição com 9 desafios práticos para desenvolver o raciocínio lógico, o pensamento computacional e fortalecer habilidades pessoais, como a comunicação. 
+
+👁️ [Codecamp | 1st Edition](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-codecamp-1st-edition.pdf)
 
 ## 🎓 Banco PAN Java Developer (114 hrs)
 O bootcamp Banco PAN Java Developer foi pensado para desenvolver as habilidades em Java Spring Boot, e descobrir como é trabalhar no Banco PAN. Durante a trilha, além dos cursos, teremos desafios de códigos, desenvolvimento de projetos e mentorias com especialistas.
