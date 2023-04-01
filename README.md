@@ -2,13 +2,6 @@
 
 Participações em cursos e bootcamps e codecamps da plataforma Dio:
 
-
-## 🎓 Codecamp | 1st Edition – Vale do Jacarandá Dourado (14 hrs)
-O Codecamp 1st Edition é o primeiro torneio da DIO somente com desafios de códigos práticos para você testar os limites de conhecimento em programação com JavaScript. 
-Será uma competição com 9 desafios práticos para desenvolver o raciocínio lógico, o pensamento computacional e fortalecer habilidades pessoais, como a comunicação. 
-
-👁️ [Codecamp | 1st Edition](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-codecamp-1st-edition.pdf)
-
 ## 🎓 Potência Tech Angular Developer - Powered by iFood (75 hrs)
 O Potência Tech powered by iFood traz um Bootcamp focado em Angular! Com cursos, desafios de projeto, desafios de código e mentorias exclusivas, o Bootcamp Potência Tech Angular Developer - Powered by iFood traz uma experiência completa para você que quer dar um pontapé na carreira tech! 
 
@@ -21,7 +14,6 @@ No Bootcamp Banco PAN Java Developer, você irá explorar:
 ⚡ Desafios de Código JavaScript
 
 👁️ [Banco PAN Java Developer](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-potencia-tech-ifood-angular-developer.pdf)
-
 
 ## 🎓 Codecamp | 1st Edition – Vale do Jacarandá Dourado (14 hrs)
 O Codecamp 1st Edition é o primeiro torneio da DIO somente com desafios de códigos práticos para você testar os limites de conhecimento em programação com JavaScript. 
