@@ -17,7 +17,7 @@ No Bootcamp Potência Tech Angular Developer, você irá explorar:
 
 ⚡ Desafios de Código JavaScript
 
-👁️ [Banco PAN Java Developer](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-potencia-tech-ifood-angular-developer.pdf)
+👁️ [Potência Tech Angular Developer](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-potencia-tech-ifood-angular-developer.pdf)
 
 ## 🎓 Codecamp | 1st Edition – Vale do Jacarandá Dourado (14 hrs)
 O Codecamp 1st Edition é o primeiro torneio da DIO somente com desafios de códigos práticos para você testar os limites de conhecimento em programação com JavaScript. 
