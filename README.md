@@ -5,12 +5,16 @@ Participações em cursos e bootcamps e codecamps da plataforma Dio:
 ## 🎓 Potência Tech Angular Developer - Powered by iFood (75 hrs)
 O Potência Tech powered by iFood traz um Bootcamp focado em Angular! Com cursos, desafios de projeto, desafios de código e mentorias exclusivas, o Bootcamp Potência Tech Angular Developer - Powered by iFood traz uma experiência completa para você que quer dar um pontapé na carreira tech! 
 
-No Bootcamp Banco PAN Java Developer, você irá explorar:
+No Bootcamp Potência Tech Angular Developer, você irá explorar:
 
 ⚡ Primeiras páginas interativas com JavaScript
+
 ⚡ TypeScript para Angular
+
 ⚡ Ganho de produtividade com a plataforma Angular
+
 ⚡ Rotas de serviços no Angular
+
 ⚡ Desafios de Código JavaScript
 
 👁️ [Banco PAN Java Developer](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-potencia-tech-ifood-angular-developer.pdf)
