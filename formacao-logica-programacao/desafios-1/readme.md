@@ -1,7 +1,9 @@
-# Descrição
+# Desafio de Código: Jornada do Herói
+
+## Descrição
 Você é um jovem herói que embarca em uma jornada épica para derrotar o temido dragão que aterroriza o reino. No entanto, você precisa atravessar uma floresta perigosa para chegar à caverna do dragão. Cada passo é crucial, e sua jornada será determinada pela lógica afiada que você possuir.
 
-# Tarefa: 
+## Tarefa: 
 Escreva um algoritmo que simule a jornada do herói pela floresta. O herói começa em uma posição inicial e deve dar uma série de passos para atravessar a floresta até a caverna do dragão.
 
 ## Entrada
