@@ -1,6 +1,19 @@
 # Digital Inovation One | Dio
 
-Participações em cursos e bootcamps e codecamps da plataforma Dio:
+Participações em cursos, bootcamps e codecamps da plataforma Dio:
+
+## 🎓 Formação Lógica de Programação (41 hrs)
+Domine os fundamentos da programação com clareza. Aprenda a trabalhar com variáveis para armazenar informações, dominar laços de repetição para otimizar fluxos, criar funções para organizar seu código e explorar o conceito de objetos para criar estrutura de dados mais complexas. Desenvolva sua base sólida para se aventurar no mundo da programação com confiança antes de aprender qualquer linguagem.
+
+A partir de Desafios de Código e Desafios de Projeto, você terá uma imersão prática e mão na massa a fim de solidificar os conceitos que você irá aprender. Para isso, iremos utilizar a linguagem JavaScript, mas somente para exemplificação. Caso você não domine a linguagem, fique tranquilo(a), você terá uma excelente experiência da mesma forma.
+
+📑 Atividades:
+
+    ⚡ Desafio de Código: Coloque em prática todo o conhecimento adquirido nas aulas e teste o seu conhecimento na resolução de um desafio.
+
+    ⚡ Desafio de Projeto: Construa o seu portfólio construindo projetos práticos com o conhecimento adquirido ao longo das aulas.
+
+👁️ [Formação Lógica de Programação](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-form-logica-program.pdf)
 
 ## 🎓 Potência Tech Angular Developer - Powered by iFood (75 hrs)
 O Potência Tech powered by iFood traz um Bootcamp focado em Angular! Com cursos, desafios de projeto, desafios de código e mentorias exclusivas, o Bootcamp Potência Tech Angular Developer - Powered by iFood traz uma experiência completa para você que quer dar um pontapé na carreira tech! 
