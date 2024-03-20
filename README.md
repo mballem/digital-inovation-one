@@ -7,11 +7,11 @@ Domine os fundamentos da programação com clareza. Aprenda a trabalhar com vari
 
 A partir de Desafios de Código e Desafios de Projeto, você terá uma imersão prática e mão na massa a fim de solidificar os conceitos que você irá aprender. Para isso, iremos utilizar a linguagem JavaScript, mas somente para exemplificação. Caso você não domine a linguagem, fique tranquilo(a), você terá uma excelente experiência da mesma forma.
 
-📑 Atividades:
+### Atividades:
 
-    ⚡ Desafio de Código: Coloque em prática todo o conhecimento adquirido nas aulas e teste o seu conhecimento na resolução de um desafio.
+⚡ Desafio de Código: Coloque em prática todo o conhecimento adquirido nas aulas e teste o seu conhecimento na resolução de um desafio.
 
-    ⚡ Desafio de Projeto: Construa o seu portfólio construindo projetos práticos com o conhecimento adquirido ao longo das aulas.
+⚡ Desafio de Projeto: Construa o seu portfólio construindo projetos práticos com o conhecimento adquirido ao longo das aulas.
 
 👁️ [Formação Lógica de Programação](https://github.com/mballem/digital-inovation-one/blob/master/_docs/cert-form-logica-program.pdf)
 
