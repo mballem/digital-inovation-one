@@ -6,4 +6,4 @@ let num2 = parseInt("40");
 const xpGanho = num1 * num2 * 100;
 
 // Imprime a quantidade de XP ganho
-print("Voce ganhou " + xpGanho + " XP!");
+console.log("Voce ganhou " + xpGanho + " XP!");
